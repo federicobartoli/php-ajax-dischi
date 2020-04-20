@@ -7,6 +7,7 @@
           <link rel="stylesheet" href="dist/css/swiper.min.css">
           <link rel="stylesheet" href="dist/css/style.css">
           <script src="dist/js/jquery.min.js" charset="utf-8"></script>
+          <script src="dist/js/handlebars.min.js" charset="utf-8"></script>
           <title>Php-ajax-dischi</title>
      </head>
      <body>
@@ -33,45 +34,8 @@
                               <div class="swiper-container">
                                   <!-- Additional required wrapper -->
                                   <div class="swiper-wrapper">
-                                       <div class="swiper-slide">
-                                           <div class="card" style="background-image: url('https://m.media-amazon.com/images/I/91rEY0JbQML._SS500_.jpg') ;">
-                                                <div class="div-album">
-                                                     <img src="https://m.media-amazon.com/images/I/91rEY0JbQML._SS500_.jpg" alt="">
+                    
 
-                                                </div>
-                                                <div class="div-descrizioni">
-                                                     <h2>Highway 45</h2>
-                                                     <p>Federico Bartoli</p>
-                                                     <p>2018</p>
-                                                </div>
-                                           </div>
-                                      </div>
-                                      <div class="swiper-slide">
-                                          <div class="card" style="background-image: url('https://m.media-amazon.com/images/I/91rEY0JbQML._SS500_.jpg') ;">
-                                               <div class="div-album">
-                                                    <img src="https://m.media-amazon.com/images/I/91rEY0JbQML._SS500_.jpg" alt="">
-
-                                               </div>
-                                               <div class="div-descrizioni">
-                                                    <h2>Highway 45</h2>
-                                                    <p>Federico Bartoli</p>
-                                                    <p>2018</p>
-                                               </div>
-                                          </div>
-                                     </div>
-                                     <div class="swiper-slide">
-                                         <div class="card" style="background-image: url('https://m.media-amazon.com/images/I/91rEY0JbQML._SS500_.jpg') ;">
-                                              <div class="div-album">
-                                                   <img src="https://m.media-amazon.com/images/I/91rEY0JbQML._SS500_.jpg" alt="">
-
-                                              </div>
-                                              <div class="div-descrizioni">
-                                                   <h2>Highway 45</h2>
-                                                   <p>Federico Bartoli</p>
-                                                   <p>2018</p>
-                                              </div>
-                                         </div>
-                                    </div>
                                   </div>
                                   <!-- If we need pagination -->
                                   <div class="swiper-pagination"></div>
@@ -84,21 +48,23 @@
                     </div>
                </div>
           </main>
+          <!-- handlebars -->
+          <script id="entry-template" type="text/x-handlebars-template">
+               <div class="swiper-slide">
+                   <div class="card" style="background-image: url('{{img}}') ;">
+                        <div class="div-album">
+                             <img src="{{img}}" alt="">
 
-
-          <!-- <div class="swiper-slide">
-              <div class="card" style="background-image: url('https://m.media-amazon.com/images/I/91rEY0JbQML._SS500_.jpg') ;">
-                   <div class="div-album">
-                        <img src="https://m.media-amazon.com/images/I/91rEY0JbQML._SS500_.jpg" alt="">
-
-                   </div>
-                   <div class="div-descrizioni">
-                        <h2>Highway 45</h2>
-                        <p>Federico Bartoli</p>
-                        <p>2018</p>
+                        </div>
+                        <div class="div-descrizioni">
+                             <h2>{{albumtitle}}</h2>
+                             <p>{{artistname}}</p>
+                             <p>{{year}}</p>
+                        </div>
                    </div>
               </div>
-         </div> -->
+         </script>
+
      <script src="dist/js/main.js" charset="utf-8"></script>
      <script src="dist/js/swiper.min.js" charset="utf-8"></script>
      </body>
