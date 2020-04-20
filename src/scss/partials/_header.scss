@@ -1,0 +1,12 @@
+.container-fluid-up {
+     height: 30px;
+     background-color: $color_container;
+     .title{
+          width: 100%;
+          h1{
+               font-size: 20px;
+               text-transform: uppercase;
+               color: $color_font;
+          }
+     }
+}
