@@ -34,7 +34,7 @@
                               <div class="swiper-container">
                                   <!-- Additional required wrapper -->
                                   <div class="swiper-wrapper">
-                    
+
 
                                   </div>
                                   <!-- If we need pagination -->
