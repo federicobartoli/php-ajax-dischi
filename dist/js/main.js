@@ -51,7 +51,7 @@ $(document).ready(function () {
                  },
 
 
-               })
+               });
           },
           error: function (error) {
                alert('BOOM');

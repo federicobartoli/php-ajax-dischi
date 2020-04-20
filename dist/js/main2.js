@@ -7,6 +7,7 @@ $(document).ready(function () {
                       // Optional parameters
                       direction: 'horizontal',
                       loop: true,
+                      simulateTouch: true,
                       autoplay: {
                        delay: 2500,
                        disableOnInteraction: true,
@@ -17,7 +18,9 @@ $(document).ready(function () {
                       // If we need pagination
                       pagination: {
                            el: '.swiper-pagination',
-                          clickable: true
+                          clickable: true,
+                          dynamicBullets: true,
+                          dynamicMainBullets: 1
                       },
 
                       // Navigation arrows
